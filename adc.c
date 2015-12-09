@@ -19,7 +19,7 @@ extern struct infrResults_t infrResults;
 void setup_ADCB()
 {
 	//set ADCB for channels 0-3 and enable (0xC1)
-	ADCB_CTRLA = 0xC1;
+	ADCB_CTRLA = 0x01;
 	
 	//set voltage reference to 2.5v (AREFA)
 	ADCB_REFCTRL = 0x20;
@@ -85,7 +85,7 @@ ISR(ADCB_CH1_vect)
 
 ISR(ADCB_CH2_vect)
 {
-	
+	//record results for back conversion
 	if (infrResults.bCount < NUM_INF_SENS_MEAS)
 	{
 		infrResults.back[infrResults.bCount] = ADCB_CH2_RES;
@@ -95,7 +95,7 @@ ISR(ADCB_CH2_vect)
 	{
 		semaphores.back_meas_done = 1;
 	}
-	
+		
 }
 
 ISR(ADCB_CH3_vect)

@@ -31,9 +31,9 @@
 
 //BOT definitions are used to set direction based on how the motors are
 //plugged into the H-bridges and oriented.
-#define BOT_LEFT 0x0C
+#define BOT_LEFT 0x0A
 #define BOT_FORWARD 0x0F
-#define BOT_RIGHT 0x03
+#define BOT_RIGHT 0x05
 #define BOT_BACK 0x00
 
 struct motorControl_t

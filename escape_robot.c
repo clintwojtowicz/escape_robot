@@ -60,7 +60,7 @@ void determine_threat_order()
 	
 	//check each direction to see which distance is closest or furthest
 	//note that threat distance is the value returned by the ADC from infrared sensors, high = closer,  low = further away
-	for(int i = LEFT; i < RIGHT; i++)
+	for(int i = LEFT; i <= RIGHT; i++)
 	{
 		//closest threat is used to decide what to move away from
 		if (threat_distance[i] > closestThreat_meas )
@@ -77,21 +77,28 @@ void determine_threat_order()
 		}
 		
 	}
+	
+	//debug
+	LED_PORT.OUT = closestThreat;
 		
 }
 
 void move_away_from_threat()
 {
 	//check each direction to see which distance is furthest and move towards it
-	for(int i = LEFT; i < RIGHT; i++)
+	for(int i = LEFT; i <= RIGHT; i++)
 	{
 		if (i == furthestThreat)
 		{
 			//make sure bot is moving away from something close, otherwise just let it sit and wait
 			if(threat_distance[closestThreat] > MIN_INFRARED_THREAT)
 			{
-				set_direction(furthestThreat);
+				if (motorControl.direction != furthestThreat)
+				{
+					set_direction(furthestThreat);
+				}
 				set_speed_with_ramp(MOTOR_FAST_TICKS);
+				
 			}
 			else
 			{
@@ -141,7 +148,7 @@ int main(void)
 		if(semaphores.left_meas_done && semaphores.back_meas_done && semaphores.front_meas_done && semaphores.right_meas_done)
 		{
 			//toggle lowest bit on LED's so that we can see the measurement status
-			LED_PORT.OUT ^= 0x01;
+			//LED_PORT.OUT ^= 0x01;
 			
 			//calculate the average distance measured by each infrared sensor
 			set_infrSens_avg_to_threatDist();
@@ -170,7 +177,6 @@ int main(void)
 			semaphores.change_speed = 0;
 			
 		}
-		
 		
 	}
 }

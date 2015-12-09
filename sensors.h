@@ -16,6 +16,10 @@
 #define MIN_INFRARED_THREAT 400
 #define NUM_INF_SENS_MEAS 4
 
+//these are used to get around having to share channel 2 because channel 3 isn't working
+#define B_SEL 0
+#define R_SEL 1
+
 void setup_timer_D1();
 void setup_timer_D0();
 void initialize_threat_distances();
@@ -37,6 +41,10 @@ struct infrResults_t
 	uint8_t rCount;
 	uint8_t fCount;
 	uint8_t bCount;
+	
+	//since CH3 conversions aren't working, we have to switch CH2 back and forth between the sensors to
+	//get reading for all 4 sensors
+	int pinSel			:1;
 	
 };
 

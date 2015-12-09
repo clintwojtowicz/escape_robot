@@ -150,9 +150,6 @@ void turn_on_all_motors(uint16_t desiredSpeed)
 
 void set_direction(uint8_t direction)
 {
-	//if the bot is already traveling in the desired direction, we don't want to make it stop and start again
-	if(direction == motorControl.direction){ return; }
-	
 	//save the current speed
 	motorControl.target_speed_ticks = motorControl.speed_ticks;
 	

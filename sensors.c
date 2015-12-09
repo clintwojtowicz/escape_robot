@@ -150,6 +150,7 @@ void set_infrSens_avg_to_threatDist()
 uint16_t calc_avg(uint8_t direction)
 {
 	int sum = 0;
+	int count = 0;
 	
 	switch(direction)
 	{
@@ -158,6 +159,7 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.left[i];
+				count++;
 			}
 		
 			break;
@@ -167,6 +169,7 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.front[i];
+				count++;
 			}
 		
 			break;
@@ -176,6 +179,7 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.back[i];
+				count++;
 			}
 		
 			break;
@@ -185,13 +189,14 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.right[i];
+				count++;
 			}
 		
 			break;	
 		
 	}	
 	
-	return sum / NUM_INF_SENS_MEAS;
+	return sum / count;
 	
 }
 
