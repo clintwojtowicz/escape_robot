@@ -226,6 +226,9 @@ int main(void)
 			set_direction(SPIN_CC);
 			set_speed_with_ramp(MOTOR_FAST_TICKS);
 			
+			//turn on LED timer for 100ms
+			set_LEDTimer(50000);
+			
 			//turn on spinning timer so we can end the spin
 			semaphores.spin_complete = 0;	//set to 0 so ISR can set it to 1
 			set_spinTimer(SPIN_TICKS);
@@ -244,16 +247,16 @@ int main(void)
 			
 			//turn off the spin timer
 			set_spinTimer(0);
+			//turn off LED_timer
+			set_LEDTimer(0);
 			//stop spinning
 			set_speed_with_ramp(0);
 				
-			//after spin is done, return to escaping
+			//after spin is done, return to escaping state
 			//reset the sensors so they can start performing measurements
 			reset_infSens();	
 			clear_meas_sems();
 			state = ESCAPING;
-					
-		
 			
 		}	//end of spinning state
 		

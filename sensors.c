@@ -87,7 +87,6 @@ double calculate_sigmoid(uint16_t sensor_value)
 {
 	double converted_value = (double)sensor_value;
 	return 1/sqrt(1+pow((double)converted_value, 2));
-	
 }
 
 //used for debugging sensors
@@ -130,8 +129,6 @@ ISR(TCD0_CCD_vect)
 {
 	//turn off right moving LED
 	LED_PORT.OUT &= (~LED_THREAT_RIGHT);
-	
-	
 }
 
 
@@ -150,7 +147,6 @@ void set_infrSens_avg_to_threatDist()
 uint16_t calc_avg(uint8_t direction)
 {
 	int sum = 0;
-	int count = 0;
 	
 	switch(direction)
 	{
@@ -159,7 +155,6 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.left[i];
-				count++;
 			}
 		
 			break;
@@ -169,7 +164,6 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.front[i];
-				count++;
 			}
 		
 			break;
@@ -179,7 +173,6 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.back[i];
-				count++;
 			}
 		
 			break;
@@ -189,14 +182,13 @@ uint16_t calc_avg(uint8_t direction)
 			for (int i = 0; i < NUM_INF_SENS_MEAS; i++)
 			{
 				sum += infrResults.right[i];
-				count++;
 			}
 		
 			break;	
 		
 	}	
 	
-	return sum / count;
+	return sum / NUM_INF_SENS_MEAS;
 	
 }
 

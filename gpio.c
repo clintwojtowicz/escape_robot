@@ -144,7 +144,8 @@ ISR(PORTJ_INT0_vect)
 void setup_F1_LEDTimer()
 {
 	//setup period for timer to 50000 ticks (assuming 32MHz clock and 64 prescale, this is 100ms)
-	TCF1_PER = 50000;
+	TCF1_PER = 0
+	;
 
 	//set prescaler for counter to 64 counts per 1 tick
 	TCF1_CTRLA = 0x05;
@@ -163,5 +164,10 @@ void next_spin_led()
 {
 	if (LED_PORT.OUT == 0x00) LED_PORT.OUT = 0x01;
 	else LED_PORT.OUT *= 2;	
+}
+
+void set_LEDTimer(uint16_t ticks)
+{
+	TCF1_PER = ticks;
 }
 

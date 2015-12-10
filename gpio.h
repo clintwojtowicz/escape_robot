@@ -9,6 +9,8 @@
 #ifndef GPIO_H_
 #define GPIO_H_
 
+#include <avr/io.h>
+
 #define BUTTON_1 0x01
 #define BUTTON_2 0x02
 #define BUTTON_3 0x04
@@ -22,6 +24,7 @@ void setup_gpio();
 void setup_btn_interrupt();
 void setup_F1_LEDTimer();
 void next_spin_led();
+void set_LEDTimer(uint16_t ticks);
 
 
 

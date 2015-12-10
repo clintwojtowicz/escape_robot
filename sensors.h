@@ -14,7 +14,7 @@
 #define MAX_TICKS_THREAT_LED 60000
 #define MIN_TICK_DELTA 50
 #define MIN_INFRARED_THREAT 400
-#define TRAPPED_INFRARED 2800
+#define TRAPPED_INFRARED 1000
 #define NUM_INF_SENS_MEAS 4
 
 void setup_timer_D1();
@@ -38,10 +38,6 @@ struct infrResults_t
 	uint8_t rCount;
 	uint8_t fCount;
 	uint8_t bCount;
-	
-	//since CH3 conversions aren't working, we have to switch CH2 back and forth between the sensors to
-	//get reading for all 4 sensors
-	int pinSel			:1;
 	
 };
 

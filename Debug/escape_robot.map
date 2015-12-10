@@ -52,8 +52,6 @@ c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-t
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega7\libm.a(exp.o) (modf)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
                               escape_robot.o (SetSystemClock)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
-                              sensors.o (__divmodhi4)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o) (__udivmodsi4)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_exit.o)
@@ -62,15 +60,13 @@ c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-t
                               escape_robot.o (__do_clear_bss)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o) (__muluhisi3)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
-                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o) (__udivmodhi4)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o) (__umulhisi3)
 
 Allocating common symbols
 Common symbol       size              file
 
-infrResults         0x25              escape_robot.o
+infrResults         0x24              escape_robot.o
 semaphores          0x2               escape_robot.o
 motorControl        0x5               escape_robot.o
 sClk                0x4               escape_robot.o
@@ -246,20 +242,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
@@ -320,20 +302,6 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
- .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
@@ -470,7 +438,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1a12
+.text           0x00000000     0x19ce
  *(.vectors)
  .vectors       0x00000000      0x1f4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega7/crtx128a1.o
                 0x00000000                __vector_default
@@ -663,124 +631,120 @@ END GROUP
                 0x00000630      0x18e gpio.o
                 0x00000630                __vector_98
  .text.setup_F1_LEDTimer
-                0x000007be       0x30 gpio.o
+                0x000007be       0x2c gpio.o
                 0x000007be                setup_F1_LEDTimer
  .text.__vector_114
-                0x000007ee       0x52 gpio.o
-                0x000007ee                __vector_114
+                0x000007ea       0x52 gpio.o
+                0x000007ea                __vector_114
  .text.next_spin_led
-                0x00000840       0x38 gpio.o
-                0x00000840                next_spin_led
+                0x0000083c       0x38 gpio.o
+                0x0000083c                next_spin_led
+ .text.set_LEDTimer
+                0x00000874       0x28 gpio.o
+                0x00000874                set_LEDTimer
  .text.initialize_motorControl
-                0x00000878       0x5c motor_control.o
-                0x00000878                initialize_motorControl
+                0x0000089c       0x5c motor_control.o
+                0x0000089c                initialize_motorControl
  .text.setup_E0_motorControl
-                0x000008d4       0x62 motor_control.o
-                0x000008d4                setup_E0_motorControl
+                0x000008f8       0x62 motor_control.o
+                0x000008f8                setup_E0_motorControl
  .text.setup_E1_motorRamp
-                0x00000936       0x30 motor_control.o
-                0x00000936                setup_E1_motorRamp
+                0x0000095a       0x30 motor_control.o
+                0x0000095a                setup_E1_motorRamp
  .text.__vector_53
-                0x00000966       0x52 motor_control.o
-                0x00000966                __vector_53
+                0x0000098a       0x52 motor_control.o
+                0x0000098a                __vector_53
  .text.set_direction
-                0x000009b8       0xf2 motor_control.o
-                0x000009b8                set_direction
+                0x000009dc       0xf2 motor_control.o
+                0x000009dc                set_direction
  .text.set_speed_with_ramp
-                0x00000aaa      0x2fe motor_control.o
-                0x00000aaa                set_speed_with_ramp
+                0x00000ace      0x2fe motor_control.o
+                0x00000ace                set_speed_with_ramp
  .text.setup_C1_spinTimer
-                0x00000da8       0x2c motor_control.o
-                0x00000da8                setup_C1_spinTimer
+                0x00000dcc       0x2c motor_control.o
+                0x00000dcc                setup_C1_spinTimer
  .text.__vector_20
-                0x00000dd4       0x52 motor_control.o
-                0x00000dd4                __vector_20
+                0x00000df8       0x52 motor_control.o
+                0x00000df8                __vector_20
  .text.set_spinTimer
-                0x00000e26       0x28 motor_control.o
-                0x00000e26                set_spinTimer
+                0x00000e4a       0x28 motor_control.o
+                0x00000e4a                set_spinTimer
  .text.initialize_semaphores
-                0x00000e4e       0x5e semaphores.o
-                0x00000e4e                initialize_semaphores
+                0x00000e72       0x5e semaphores.o
+                0x00000e72                initialize_semaphores
  .text.clear_meas_sems
-                0x00000eac       0x36 semaphores.o
-                0x00000eac                clear_meas_sems
+                0x00000ed0       0x36 semaphores.o
+                0x00000ed0                clear_meas_sems
  .text.set_Clock_32MHz
-                0x00000ee2       0x26 escape_robot.o
-                0x00000ee2                set_Clock_32MHz
+                0x00000f06       0x26 escape_robot.o
+                0x00000f06                set_Clock_32MHz
  .text.determine_threat_order
-                0x00000f08       0xb0 escape_robot.o
-                0x00000f08                determine_threat_order
+                0x00000f2c       0xb0 escape_robot.o
+                0x00000f2c                determine_threat_order
  .text.move_away_from_threat
-                0x00000fb8       0x90 escape_robot.o
-                0x00000fb8                move_away_from_threat
+                0x00000fdc       0x90 escape_robot.o
+                0x00000fdc                move_away_from_threat
  .text.check_for_trapped
-                0x00001048       0x50 escape_robot.o
-                0x00001048                check_for_trapped
- .text.main     0x00001098      0x168 escape_robot.o
-                0x00001098                main
+                0x0000106c       0x50 escape_robot.o
+                0x0000106c                check_for_trapped
+ .text.main     0x000010bc      0x176 escape_robot.o
+                0x000010bc                main
  .text.setup_timer_D1
-                0x00001200       0x30 sensors.o
-                0x00001200                setup_timer_D1
+                0x00001232       0x30 sensors.o
+                0x00001232                setup_timer_D1
  .text.__vector_83
-                0x00001230       0x7e sensors.o
-                0x00001230                __vector_83
+                0x00001262       0x7e sensors.o
+                0x00001262                __vector_83
  .text.initialize_threat_distances
-                0x000012ae       0x2e sensors.o
-                0x000012ae                initialize_threat_distances
+                0x000012e0       0x2e sensors.o
+                0x000012e0                initialize_threat_distances
  .text.__vector_77
-                0x000012dc       0x7e sensors.o
-                0x000012dc                __vector_77
+                0x0000130e       0x7e sensors.o
+                0x0000130e                __vector_77
  .text.__vector_79
-                0x0000135a       0x7e sensors.o
-                0x0000135a                __vector_79
+                0x0000138c       0x7e sensors.o
+                0x0000138c                __vector_79
  .text.__vector_80
-                0x000013d8       0x7e sensors.o
-                0x000013d8                __vector_80
+                0x0000140a       0x7e sensors.o
+                0x0000140a                __vector_80
  .text.__vector_81
-                0x00001456       0x7e sensors.o
-                0x00001456                __vector_81
+                0x00001488       0x7e sensors.o
+                0x00001488                __vector_81
  .text.__vector_82
-                0x000014d4       0x7e sensors.o
-                0x000014d4                __vector_82
+                0x00001506       0x7e sensors.o
+                0x00001506                __vector_82
  .text.set_infrSens_avg_to_threatDist
-                0x00001552       0x3e sensors.o
-                0x00001552                set_infrSens_avg_to_threatDist
+                0x00001584       0x3e sensors.o
+                0x00001584                set_infrSens_avg_to_threatDist
  .text.calc_avg
-                0x00001590      0x172 sensors.o
-                0x00001590                calc_avg
+                0x000015c2      0x14a sensors.o
+                0x000015c2                calc_avg
  .text.reset_infSens
-                0x00001702       0x1e sensors.o
-                0x00001702                reset_infSens
+                0x0000170c       0x1e sensors.o
+                0x0000170c                reset_infSens
  .text.CCPIOWrite
-                0x00001720       0x2a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
-                0x00001720                CCPIOWrite
+                0x0000172a       0x2a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+                0x0000172a                CCPIOWrite
  .text.SetSystemClock
-                0x0000174a       0x6a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
-                0x0000174a                SetSystemClock
+                0x00001754       0x6a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+                0x00001754                SetSystemClock
  .text.GetSystemClocks
-                0x000017b4      0x196 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
-                0x000017b4                GetSystemClocks
+                0x000017be      0x196 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+                0x000017be                GetSystemClocks
  .text.libgcc.div
-                0x0000194a       0x26 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_divmodhi4.o)
-                0x0000194a                _div
-                0x0000194a                __divmodhi4
- .text.libgcc.div
-                0x00001970       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
-                0x00001970                __udivmodsi4
+                0x00001954       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodsi4.o)
+                0x00001954                __udivmodsi4
  .text.libgcc.mul
-                0x000019b4       0x14 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o)
-                0x000019b4                __muluhisi3
- .text.libgcc.div
-                0x000019c8       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_udivmodhi4.o)
-                0x000019c8                __udivmodhi4
+                0x00001998       0x14 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_muluhisi3.o)
+                0x00001998                __muluhisi3
  .text.libgcc.mul
-                0x000019f0       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
-                0x000019f0                __umulhisi3
-                0x00001a0e                . = ALIGN (0x2)
+                0x000019ac       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_umulhisi3.o)
+                0x000019ac                __umulhisi3
+                0x000019ca                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001a0e        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_exit.o)
-                0x00001a0e                _exit
-                0x00001a0e                exit
+ .fini9         0x000019ca        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_exit.o)
+                0x000019ca                _exit
+                0x000019ca                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -799,11 +763,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001a0e        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_exit.o)
+ .fini0         0x000019ca        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega7\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001a12                _etext = .
+                0x000019ce                _etext = .
 
-.data           0x00802000        0x0 load address 0x00001a12
+.data           0x00802000        0x0 load address 0x000019ce
                 0x00802000                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -814,7 +778,7 @@ END GROUP
                 0x00802000                _edata = .
                 0x00802000                PROVIDE (__data_end, .)
 
-.bss            0x00802000       0x3f
+.bss            0x00802000       0x3e
                 0x00802000                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
@@ -830,22 +794,22 @@ END GROUP
  .bss.state     0x0080200a        0x1 escape_robot.o
                 0x0080200a                state
  *(COMMON)
- COMMON         0x0080200b       0x34 escape_robot.o
+ COMMON         0x0080200b       0x33 escape_robot.o
                 0x0080200b                infrResults
-                0x00802030                semaphores
-                0x00802032                motorControl
-                0x00802037                sClk
-                0x0080203b                pClk
-                0x0080203f                PROVIDE (__bss_end, .)
-                0x00001a12                __data_load_start = LOADADDR (.data)
-                0x00001a12                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080202f                semaphores
+                0x00802031                motorControl
+                0x00802036                sClk
+                0x0080203a                pClk
+                0x0080203e                PROVIDE (__bss_end, .)
+                0x000019ce                __data_load_start = LOADADDR (.data)
+                0x000019ce                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080203f        0x0
-                0x0080203f                PROVIDE (__noinit_start, .)
+.noinit         0x0080203e        0x0
+                0x0080203e                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080203f                PROVIDE (__noinit_end, .)
-                0x0080203f                _end = .
-                0x0080203f                PROVIDE (__heap_start, .)
+                0x0080203e                PROVIDE (__noinit_end, .)
+                0x0080203e                _end = .
+                0x0080203e                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -911,92 +875,92 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x230
+.debug_aranges  0x00000000      0x238
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x40 adc.o
  .debug_aranges
-                0x00000040       0x48 gpio.o
+                0x00000040       0x50 gpio.o
  .debug_aranges
-                0x00000088       0x88 motor_control.o
+                0x00000090       0x88 motor_control.o
  .debug_aranges
-                0x00000110       0x28 semaphores.o
+                0x00000118       0x28 semaphores.o
  .debug_aranges
-                0x00000138       0x40 escape_robot.o
+                0x00000140       0x40 escape_robot.o
  .debug_aranges
-                0x00000178       0x88 sensors.o
+                0x00000180       0x88 sensors.o
  .debug_aranges
-                0x00000200       0x30 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+                0x00000208       0x30 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1e70
+.debug_info     0x00000000     0x1e51
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x76e adc.o
- .debug_info    0x0000076e      0x3f9 gpio.o
- .debug_info    0x00000b67      0x385 motor_control.o
- .debug_info    0x00000eec      0x10e semaphores.o
- .debug_info    0x00000ffa      0x64b escape_robot.o
- .debug_info    0x00001645      0x4f1 sensors.o
- .debug_info    0x00001b36      0x33a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_info    0x00000000      0x75d adc.o
+ .debug_info    0x0000075d      0x422 gpio.o
+ .debug_info    0x00000b7f      0x385 motor_control.o
+ .debug_info    0x00000f04      0x10e semaphores.o
+ .debug_info    0x00001012      0x63a escape_robot.o
+ .debug_info    0x0000164c      0x4cb sensors.o
+ .debug_info    0x00001b17      0x33a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
-.debug_abbrev   0x00000000      0x874
+.debug_abbrev   0x00000000      0x888
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x15a adc.o
- .debug_abbrev  0x0000015a       0xdd gpio.o
- .debug_abbrev  0x00000237      0x164 motor_control.o
- .debug_abbrev  0x0000039b       0x6c semaphores.o
- .debug_abbrev  0x00000407      0x19c escape_robot.o
- .debug_abbrev  0x000005a3      0x1bc sensors.o
- .debug_abbrev  0x0000075f      0x115 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_abbrev  0x0000015a      0x106 gpio.o
+ .debug_abbrev  0x00000260      0x164 motor_control.o
+ .debug_abbrev  0x000003c4       0x6c semaphores.o
+ .debug_abbrev  0x00000430      0x19c escape_robot.o
+ .debug_abbrev  0x000005cc      0x1a7 sensors.o
+ .debug_abbrev  0x00000773      0x115 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
-.debug_line     0x00000000     0x1770
+.debug_line     0x00000000     0x176b
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x25e adc.o
- .debug_line    0x0000025e      0x323 gpio.o
- .debug_line    0x00000581      0x538 motor_control.o
- .debug_line    0x00000ab9       0xb3 semaphores.o
- .debug_line    0x00000b6c      0x3fd escape_robot.o
- .debug_line    0x00000f69      0x436 sensors.o
- .debug_line    0x0000139f      0x3d1 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_line    0x0000025e      0x340 gpio.o
+ .debug_line    0x0000059e      0x538 motor_control.o
+ .debug_line    0x00000ad6       0xb3 semaphores.o
+ .debug_line    0x00000b89      0x409 escape_robot.o
+ .debug_line    0x00000f92      0x408 sensors.o
+ .debug_line    0x0000139a      0x3d1 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
-.debug_frame    0x00000000      0x890
+.debug_frame    0x00000000      0x8b0
  *(.debug_frame)
  .debug_frame   0x00000000      0x154 adc.o
- .debug_frame   0x00000154      0x108 gpio.o
- .debug_frame   0x0000025c      0x1ec motor_control.o
- .debug_frame   0x00000448       0x54 semaphores.o
- .debug_frame   0x0000049c       0xb4 escape_robot.o
- .debug_frame   0x00000550      0x2cc sensors.o
- .debug_frame   0x0000081c       0x74 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_frame   0x00000154      0x128 gpio.o
+ .debug_frame   0x0000027c      0x1ec motor_control.o
+ .debug_frame   0x00000468       0x54 semaphores.o
+ .debug_frame   0x000004bc       0xb4 escape_robot.o
+ .debug_frame   0x00000570      0x2cc sensors.o
+ .debug_frame   0x0000083c       0x74 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
 .debug_str      0x00000000      0xefd
  *(.debug_str)
- .debug_str     0x00000000      0x748 adc.o
-                                0x796 (size before relaxing)
- .debug_str     0x00000748      0x174 gpio.o
-                                0x3e7 (size before relaxing)
- .debug_str     0x000008bc      0x136 motor_control.o
+ .debug_str     0x00000000      0x741 adc.o
+                                0x78f (size before relaxing)
+ .debug_str     0x00000741      0x181 gpio.o
+                                0x3fa (size before relaxing)
+ .debug_str     0x000008c2      0x136 motor_control.o
                                 0x3db (size before relaxing)
- .debug_str     0x000009f2       0x38 semaphores.o
+ .debug_str     0x000009f8       0x38 semaphores.o
                                 0x1ce (size before relaxing)
- .debug_str     0x00000a2a      0x26c escape_robot.o
-                                0x647 (size before relaxing)
- .debug_str     0x00000c96      0x124 sensors.o
-                                0x3ea (size before relaxing)
+ .debug_str     0x00000a30      0x26c escape_robot.o
+                                0x640 (size before relaxing)
+ .debug_str     0x00000c9c      0x11e sensors.o
+                                0x3d1 (size before relaxing)
  .debug_str     0x00000dba      0x143 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
                                 0x37d (size before relaxing)
 
-.debug_loc      0x00000000     0x142d
+.debug_loc      0x00000000     0x1475
  *(.debug_loc)
  .debug_loc     0x00000000      0x2c7 adc.o
- .debug_loc     0x000002c7      0x1f1 gpio.o
- .debug_loc     0x000004b8      0x3c9 motor_control.o
- .debug_loc     0x00000881       0x76 semaphores.o
- .debug_loc     0x000008f7      0x14e escape_robot.o
- .debug_loc     0x00000a45      0x5dd sensors.o
- .debug_loc     0x00001022      0x40b c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_loc     0x000002c7      0x239 gpio.o
+ .debug_loc     0x00000500      0x3c9 motor_control.o
+ .debug_loc     0x000008c9       0x76 semaphores.o
+ .debug_loc     0x0000093f      0x14e escape_robot.o
+ .debug_loc     0x00000a8d      0x5dd sensors.o
+ .debug_loc     0x0000106a      0x40b c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1016,15 +980,15 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x1c0
+.debug_ranges   0x00000000      0x1c8
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x30 adc.o
- .debug_ranges  0x00000030       0x38 gpio.o
- .debug_ranges  0x00000068       0x78 motor_control.o
- .debug_ranges  0x000000e0       0x18 semaphores.o
- .debug_ranges  0x000000f8       0x30 escape_robot.o
- .debug_ranges  0x00000128       0x78 sensors.o
- .debug_ranges  0x000001a0       0x20 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
+ .debug_ranges  0x00000030       0x40 gpio.o
+ .debug_ranges  0x00000070       0x78 motor_control.o
+ .debug_ranges  0x000000e8       0x18 semaphores.o
+ .debug_ranges  0x00000100       0x30 escape_robot.o
+ .debug_ranges  0x00000130       0x78 sensors.o
+ .debug_ranges  0x000001a8       0x20 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib\libAVRX_Clocks.a(AVRX_Clocks.o)
 
 .debug_macro
  *(.debug_macro)
