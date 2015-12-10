@@ -22,8 +22,8 @@ struct semaphore_t
 	int change_speed		:1;
 	int change_direction	:1;
 	
-	
-	
+	int spin_complete		:1;
+	int led_toggle			:1;
 };
 
 void initialize_semaphores();

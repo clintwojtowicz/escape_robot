@@ -24,6 +24,9 @@ void initialize_semaphores()
 	semaphores.change_speed = 0;
 	semaphores.change_direction = 0;
 	
+	semaphores.spin_complete = 0;
+	semaphores.led_toggle = 0;
+	
 }
 
 void clear_meas_sems()

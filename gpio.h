@@ -20,6 +20,8 @@
 
 void setup_gpio();
 void setup_btn_interrupt();
+void setup_F1_LEDTimer();
+void next_spin_led();
 
 
 

@@ -9,11 +9,13 @@
 #include "led_definitions.h"
 #include "motor_control.h"
 #include "semaphores.h"
+#include "state_defs.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
 extern struct semaphore_t semaphores;
 extern struct motorControl_t motorControl;
+extern uint8_t state;
 
 void setup_gpio()
 {
@@ -65,64 +67,101 @@ ISR(PORTJ_INT0_vect)
 	switch(PORTJ_IN)
 	{
 		case (BUTTON_1):
-		//set speed to 0
-		motorControl.target_speed_ticks = 0;
-		semaphores.change_speed = 1;
+			//set speed to 0
+			motorControl.target_speed_ticks = 0;
+			semaphores.change_speed = 1;
 		
-		break;
+			break;
 		
 		case (BUTTON_2):
-		//change speed to medium
-		motorControl.target_speed_ticks = MOTOR_MEDIUM_TICKS;
-		semaphores.change_speed = 1;
+			//change speed to fast
+			motorControl.target_speed_ticks = MOTOR_FAST_TICKS;
+			semaphores.change_speed = 1;
 		
-		break;
+			break;
 		
 		case (BUTTON_3):
-		//change speed to fast
-		motorControl.target_speed_ticks = MOTOR_FAST_TICKS;
-		semaphores.change_speed = 1;
+			//change motor to left
+			motorControl.direction = LEFT;
+			semaphores.change_direction = 1;
 		
-		break;
+			break;
 		
 		case (BUTTON_4):
-		//change motor to left
-		motorControl.direction = LEFT;
-		semaphores.change_direction = 1;
+			//change motor to forward
+			motorControl.direction = FORWARD;
+			semaphores.change_direction = 1;
 		
-		break;
+			break;
 		
 		case(BUTTON_5):
-		//change motor to forward
-		motorControl.direction = FORWARD;
-		semaphores.change_direction = 1;
+			if (state == TESTING)
+			{
+				//change motor to backwards
+				motorControl.direction = BACKWARD;
+				semaphores.change_direction = 1;
+			}
+			else
+			{
+				state = SPINNING;
+			}
 		
-		break;
+			break;
 		
 		case(BUTTON_6):
-		//change motor to backwards
-		motorControl.direction = BACKWARD;
-		semaphores.change_direction = 1;
+			if (state == TESTING)
+			{
+				//change motor to right
+				motorControl.direction = RIGHT;
+				semaphores.change_direction = 1;
+			}
+			else
+			{
+				state = TRAPPED;
+			}
 		
-		break;
+			break;
 		
 		case(BUTTON_7):
-		//change motor to right
-		motorControl.direction = RIGHT;
-		semaphores.change_direction = 1;
+			state = ESCAPING;
 		
-		break;
+			break;
 		
 		case(BUTTON_8):
+			//set state to testing
+			state = TESTING;
 		
+			break;
 		
-		break;
 		default:
 		//no valid button pressed do nothing
 		break;
 		
 	}
 	
+}
+
+void setup_F1_LEDTimer()
+{
+	//setup period for timer to 50000 ticks (assuming 32MHz clock and 64 prescale, this is 100ms)
+	TCF1_PER = 50000;
+
+	//set prescaler for counter to 64 counts per 1 tick
+	TCF1_CTRLA = 0x05;
+
+	//set interrupt priority to low
+	TCF1_INTCTRLA = 0x01;
 	
+}
+
+ISR(TCF1_OVF_vect)
+{
+	semaphores.led_toggle = 1;
+}
+
+void next_spin_led()
+{
+	if (LED_PORT.OUT == 0x00) LED_PORT.OUT = 0x01;
+	else LED_PORT.OUT *= 2;	
 }
 

@@ -15,6 +15,9 @@
 struct motorControl_t;
 extern struct motorControl_t motorControl;
 
+struct semaphore_t;
+extern struct semaphore_t semaphores;
+
 void initialize_motorControl()
 {
 	motorControl.speed_ticks = 0;
@@ -179,6 +182,18 @@ void set_direction(uint8_t direction)
 			motorControl.direction = RIGHT;
 		
 			break;
+		
+		case(SPIN_CC):
+			PORTD_OUT = BOT_SPIN_CC;
+			motorControl.direction = SPIN_CC;
+			
+			break;
+		
+		case(SPIN_CCW):
+			PORTD_OUT = BOT_SPIN_CCW;
+			motorControl.direction = SPIN_CCW;
+		
+			break;
 			
 	}
 	
@@ -297,5 +312,31 @@ void set_speed_no_ramp(uint16_t desired_speed)
 	TCE0_CCC = desired_speed;
 	TCE0_CCD = desired_speed;
 	
+}
+
+
+//spin timer is used to determine how long robot should spin while in spinning state
+void setup_C1_spinTimer()
+{
+	//setup period for timer to 0, but it will be 62500 ticks when used (assuming 32MHz clocks, this is 2s with 1024 prescale)
+	TCC1_PER = 0;
+
+	//set prescaler for counter to 1024 counts per 1 tick
+	TCC1_CTRLA = 0x07;
+
+	//set interrupt priority to low
+	TCC1_INTCTRLA = 0x01;
+	
+}
+
+//called when spin timer overflows
+ISR(TCC1_OVF_vect)
+{
+	semaphores.spin_complete = 1;	
+}
+
+void set_spinTimer(uint16_t ticks)
+{
+	TCC1_PER = ticks;
 }
 

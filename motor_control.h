@@ -16,6 +16,7 @@
 #define MIN_SPEED_LIMIT_TICKS 7000
 #define TICK_DELTA_MOTOR 500
 #define MAX_TICKS_RAMP 20000
+#define SPIN_TICKS 62500
 
 #define MOTOR_SLOW_TICKS 2000
 #define MOTOR_MEDIUM_TICKS 5000
@@ -28,6 +29,8 @@
 #define FORWARD 1
 #define BACKWARD 2
 #define RIGHT 3
+#define SPIN_CC 4
+#define SPIN_CCW 5
 
 //BOT definitions are used to set direction based on how the motors are
 //plugged into the H-bridges and oriented.
@@ -35,6 +38,8 @@
 #define BOT_FORWARD 0x0F
 #define BOT_RIGHT 0x05
 #define BOT_BACK 0x00
+#define BOT_SPIN_CC 0x03
+#define BOT_SPIN_CCW 0x0C
 
 struct motorControl_t
 {
@@ -49,7 +54,7 @@ struct motorControl_t
 	int LR_direction		:1;
 	int RR_direction		:1;
 	
-	int direction			:2;
+	int direction			:3;
 	
 	int ramp_semaphore		:1;
 	
@@ -65,6 +70,8 @@ void disable_all_CCx_E0();
 void enable_all_CCx_E0();
 void turn_off_all_motors();
 void turn_on_all_motors(uint16_t desiredSpeed);
+void setup_C1_spinTimer();
+void set_spinTimer(uint16_t ticks);
 
 
 

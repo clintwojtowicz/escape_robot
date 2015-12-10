@@ -16,7 +16,7 @@ escape_robot.d escape_robot.o: .././escape_robot.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  .././semaphores.h .././led_definitions.h .././adc.h .././sensors.h \
- .././direction_defs.h .././motor_control.h .././gpio.h
+ .././direction_defs.h .././motor_control.h .././gpio.h .././state_defs.h
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -63,3 +63,5 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 .././motor_control.h:
 
 .././gpio.h:
+
+.././state_defs.h:

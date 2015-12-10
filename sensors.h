@@ -14,11 +14,8 @@
 #define MAX_TICKS_THREAT_LED 60000
 #define MIN_TICK_DELTA 50
 #define MIN_INFRARED_THREAT 400
+#define TRAPPED_INFRARED 2800
 #define NUM_INF_SENS_MEAS 4
-
-//these are used to get around having to share channel 2 because channel 3 isn't working
-#define B_SEL 0
-#define R_SEL 1
 
 void setup_timer_D1();
 void setup_timer_D0();
